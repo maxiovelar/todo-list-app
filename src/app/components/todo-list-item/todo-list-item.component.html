@@ -1,0 +1,15 @@
+<div *ngIf="todo" class="todo">
+  <div class="top">
+    <p *ngIf="todo.createdAt">{{ todo.createdAt | dateFormat }}</p>
+    <button (click)="({})">
+      <img src="assets/cross-circle.svg" alt="cross" />
+    </button>
+  </div>
+  <div class="bottom">
+    <span>
+      {{ todo.description }}
+    </span>
+
+    <!-- Add DROPDOWN -->
+  </div>
+</div>

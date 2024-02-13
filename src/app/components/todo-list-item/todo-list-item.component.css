@@ -1,0 +1,49 @@
+.todo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  border: solid 1px var(--gray);
+  padding: 1rem;
+  line-height: 24px;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    button {
+      background: transparent;
+      cursor: pointer;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: ease-in;
+      transition-duration: 300ms;
+
+      img {
+        width: 18px;
+        height: 18px;
+      }
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  img {
+    background: white;
+    color: white;
+    fill: white;
+    border-radius: 50%;
+  }
+}
